@@ -1,0 +1,15 @@
+success :
+    global :
+        created : "created successfully"
+        updated : "updated successfully"
+        deleted : "deleted successfully"
+failure :
+    global :
+        created : "Failed to create {name}"
+        updated : "Failed to update {name}"
+        deleted : "Failed to delete {name}"
+        not_found : "{name} not found"
+        already_exists : "{name} already exists"
+        payload_invalid : "Invalid payload"
+    user:
+        hash : "Failed to hash password"

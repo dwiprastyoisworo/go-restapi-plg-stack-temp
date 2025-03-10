@@ -1,0 +1,15 @@
+success :
+  global :
+    created : "Berhasil Dibuat"
+    updated : "Berhasil Dirubah"
+    deleted : "Berhasil Dihapus"
+failure :
+  global :
+    created : "Gagal membuat {name}"
+    updated : "Gagal memperbarui {name}"
+    deleted : "Gagal menghapus {name}"
+    not_found: "{name} tidak ditemukan"
+    already_exists: "{name} sudah ada"
+    payload_invalid : "Payload tidak valid"
+  user:
+    hash : "Gagal menghash password"
