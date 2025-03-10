@@ -1,0 +1,1 @@
+# go-restapi-plg-stack-temp
