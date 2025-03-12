@@ -11,22 +11,19 @@ RUN go mod download
 # Copy the source code
 COPY . .
 
-# Copy the user.config file
-COPY file file/
-
 # Build the application
-RUN go build -o /bin/serve cmd/app/*.go
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /bin/serve cmd/app/user/*.go
 
 # Final stage
 FROM alpine:latest
 
-WORKDIR /root/
+WORKDIR /app
 
 # Copy the built binary from the build stage
 COPY --from=build /bin/serve .
 
 # Copy the user.config file
-COPY --from=build /app/file file/
+COPY --from=build /app/file ./file/
 
 # Expose the application port
 EXPOSE 8080

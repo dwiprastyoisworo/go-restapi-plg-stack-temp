@@ -1,8 +1,8 @@
 .PHONY: run server migrate rollback build clean
 
 # Menjalankan service utama
-run:
-	go run cmd/app/*.go
+run-user:
+	go run cmd/app/user/*.go
 
 # Menjalankan migrasi database (up)
 migrate:
@@ -13,9 +13,12 @@ rollback:
 	go run cmd/migration/*.go -type=rollback
 
 # Build binary untuk service utama dan migrasi
-build:
-	go build -o bin/serve cmd/app/*.go
+build-user:
+	go build -o bin/serve cmd/app/user/*.go
 
 # Membersihkan binary build
 clean:
 	rm -f bin/serve
+
+compose-up:
+	docker-compose up -d

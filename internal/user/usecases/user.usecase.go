@@ -3,7 +3,7 @@ package usecases
 import (
 	"context"
 	"errors"
-	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/repositories"
+	repositories2 "github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/user/repositories"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/constants"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/helpers"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/models"
@@ -12,12 +12,12 @@ import (
 )
 
 type UserUsecase struct {
-	repo     repositories.RepositoryImpl[models.Users]
-	repoUser repositories.UserRepositoryImpl
+	repo     repositories2.RepositoryImpl[models.Users]
+	repoUser repositories2.UserRepositoryImpl
 	db       *gorm.DB
 }
 
-func NewUserUsecase(repo repositories.RepositoryImpl[models.Users], repoUser repositories.UserRepositoryImpl, db *gorm.DB) UserUsecaseImpl {
+func NewUserUsecase(repo repositories2.RepositoryImpl[models.Users], repoUser repositories2.UserRepositoryImpl, db *gorm.DB) UserUsecaseImpl {
 	return &UserUsecase{repo: repo, repoUser: repoUser, db: db}
 }
 

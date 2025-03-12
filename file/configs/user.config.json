@@ -3,12 +3,12 @@
     "name": "user-service",
     "version": "1.0.0",
     "description": "User Service",
-    "port": 3000,
+    "port": 8080,
     "log-level": "debug",
     "is-development": true
   },
   "postgres": {
-    "host": "localhost",
+    "host": "postgres",
     "port": 5432,
     "database": "mydatabase",
     "username": "root",

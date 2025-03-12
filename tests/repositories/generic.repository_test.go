@@ -2,7 +2,7 @@ package repositories
 
 import (
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/repositories"
+	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/user/repositories"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

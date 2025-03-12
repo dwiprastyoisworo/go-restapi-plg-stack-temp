@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/usecases"
+	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/user/usecases"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/configs"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/constants"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/models"

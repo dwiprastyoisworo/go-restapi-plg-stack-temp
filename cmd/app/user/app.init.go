@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/routes"
+	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/internal/user/routes"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/configs"
 	"github.com/dwiprastyoisworo/go-restapi-plg-stack-temp/lib/helpers"
 	"github.com/gin-gonic/gin"
